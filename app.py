@@ -34,11 +34,11 @@ class VideoProcessor:
      
         rects = detector(gray, 0)
         
-            for (i, rect) in enumerate(rects):
+        for (i, rect) in enumerate(rects):
             s_ = predictor(gray, rect)
             s = face_utils.shape_to_np(s_)
         	 
-            for(i, y) in s:
+        for(i, y) in s:
         	       cv2.circle(img, (i,y), 2, (0, 255, 0), -1)
             # count number of landmarks we actually detected on image
         if i==0:
