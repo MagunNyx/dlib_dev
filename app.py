@@ -34,7 +34,7 @@ class VideoProcessor:
      
         rects = detector(gray, 0)
         
-        for (i, rect) in enumerate(rects):
+            for (i, rect) in enumerate(rects):
             s_ = predictor(gray, rect)
             s = face_utils.shape_to_np(s_)
         	 
