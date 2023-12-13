@@ -5,7 +5,6 @@ from imutils import face_utils
 import dlib
 import cv2
 import numpy as np
-import opencv
 
 st.title("Streamlit WebRTC using DLIB")
 st.write("This is a sample to integrate DLIB :D ")
